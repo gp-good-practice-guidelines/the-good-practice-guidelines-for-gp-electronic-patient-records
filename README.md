@@ -7,11 +7,19 @@ The Good Practice Guidelines for GP electronic patient records (The GPG) were de
 
 The existing published GPG is at https://www.gov.uk/government/publications/the-good-practice-guidelines-for-gp-electronic-patient-records-version-4-2011
 
+* One of the problems identified in all discussions regarding the GPG revision plans over the period it has been in discussion is that nobody can agree on how to manage the authoring. None of the organisations involved can seemingly solve this issue, despite all their resources.
+
+* The original Word documents from which the [published PDFs](https://www.gov.uk/government/publications/the-good-practice-guidelines-for-gp-electronic-patient-records-version-4-2011) were generated appear to have been **lost** through organisational churn and general lack of organisational memory within DH (now DHSC) and NHS England (which didn't exist in 2011). In an effort to preclude future losses of the original manuscript the proposal is to use a repository under this GitHub organisation to house the originals in MarkDown format.
+
 ## Proposal for GitHub authoring and development
 
-* One of the problems identified in all discussions regarding the GPG revision plans over the past 4-5 years it has been in discussion is that because a number of organisations are involved,
+* This proposal is a 'guerrilla implementation' of the the GPGv5 update that uses GitHub for the content management making it very easy for people from **any** organisation to be involved in authoring the original manuscript.
 
-* The original Word documents from which the [published PDFs](https://www.gov.uk/government/publications/the-good-practice-guidelines-for-gp-electronic-patient-records-version-4-2011) were gegerated appear to have been lost through organisational churn and general lack of organisational memory within DH (now DHSC) and NHS England (which didn't exist in 2011). In an effort to preclude future losses of the original manuscript the proposal is to use a repository under this GitHub organisation to house the originals in MarkDown format.
+* Text is 'mastered' in MarkDown, which is compiled using a very simple static site generator framework into a nice looking website that people can interact with. No PDFs. No protracted process to get the next update. GPGv6 will **not** take 10 years to organise.
+
+* The manuscript of the GPG should be held in version control using Git and GitHub. Authors and editors have a number of options for updating the manuscript - directly editing online in GitHub, editing via a text editor such as VS Code, or using an alternative online editor such as [Prose.io](https://prose.io)
+
+* GitHub enables each edit to be atomically tracked, attributes authorship properly, and provides tools to allow external contrinutions and updates to be 'pulled' into the new version, if the editors deem them suitable following review.
 
 * Future releases of the GPG (version control of releases) will be managed using the GitHub 'releases' tooling.
 
@@ -24,6 +32,6 @@ The existing published GPG is at https://www.gov.uk/government/publications/the-
 * The GPG will eventually be hosted at a custom URL.
 
 ## FAQs
-* Why GitHub? GitHub is a code sharing repository which supports the ethos of openness required in medicine and medical guidelines. Microsoft own GitHub, however they exercise no control over the content of this guidance, in any form.
+* **Why GitHub?** GitHub is a code sharing repository which supports the ethos of openness required in medicine and medical guidelines. Microsoft own GitHub, however they exercise no control over the content of this guidance, in any form.
 
-* What if GitHub closes? It won't, but we could move the manuscript easily to any other Git repository provider, such as Bitbucket or GitLab.
+* **What if GitHub closes down/changes its terms/becomes no longer free?** It won't, but we could move the manuscript easily to any other Git repository provider, such as Bitbucket or GitLab.
